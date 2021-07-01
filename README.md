@@ -28,6 +28,8 @@ $ python3 rave-strategies.py
 ## To Do
 - Add weighted probability to sequencer selection
 - Expand vocab for actions, things, contexts
+- Add example output and setup info to readme
+- Add header image
 
 
 ## Who Made This?
