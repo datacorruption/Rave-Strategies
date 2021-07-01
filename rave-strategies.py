@@ -9,6 +9,7 @@ from songdata import *
 load_dotenv(".env")
 SENDER = os.environ.get("GMAIL_USER")
 PASSWORD = os.environ.get("GMAIL_PASSWORD")
+RECIPIENT = os.environ.get("EMAIL_RECIPIENT")
 
 # GENERATE A TRACK TEMPO
 # BETWEEN 80 AND 200 BPM
@@ -58,8 +59,7 @@ else :
 # ASSEMBLE THE RAVE STRATEGY
 strategy = "Write a " + bpm + "bpm " + genre + " track in " + key + " using " + " / ".join(sounds) + sequencer_prepend + sequencer + " with a duration of ~" + random.choice(length) + ". \n\nIt should " + random.choice(action_list) + " like " + random.choice(thing_list) + " " + random.choice(context_list) + "."
 
-subject = 'Today\'s Rave Strategy'
-
+# CONSTRUCT THE EMAIL
 def send_email(recipient, subject, body) :
     msg = EmailMessage()
     msg.set_content(body)
@@ -71,32 +71,4 @@ def send_email(recipient, subject, body) :
     server.send_message(msg)
     server.quit()
 
-send_email("nullsleep@gmail.com", subject="Today\'s Rave Strategy", body=strategy)
-
-
-# CONSTRUCT THE EMAIL
-# gmail_user = 'nullsleep@gmail.com'
-# gmail_password = 'wteujzphnxtmbipf'
-# sent_from = "RAVE STRATEGIES"
-# to = ['nullsleep@gmail.com']
-# subject = 'Today\'s Rave Strategy'
-
-# email_text = """\
-# From: %s
-# To: %s
-# Subject: %s
-
-# %s
-# """ % (sent_from, ", ".join(to), subject, body)
-
-# # SEND THE EMAIL
-# try:
-#     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-#     server.set_debuglevel(1)
-#     server.ehlo()
-#     server.login(gmail_user, gmail_password)
-#     server.sendmail(sent_from, to, email_text)
-#     server.close()
-#     print ('Email sent!')
-# except:
-#     print ('Something went wrong...')
+send_email(RECIPIENT, subject="Today\'s Rave Strategy", body=strategy)
