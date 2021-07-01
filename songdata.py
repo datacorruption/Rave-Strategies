@@ -4,11 +4,11 @@ genre_list = ["techno", "house", "electro", "jungle", "drum & bass", "ambient", 
 # KEYS
 key_list = [ "C major", "Db major", "D major", "Eb major", "E major", "F major", "F# major", "Gb major", "G major", "Ab major", "A major", "Bb major", "B major", "C minor", "C# minor", "D minor", "Eb minor", "D# minor", "E minor", "F minor", "F# minor", "G minor", "G# minor", "A minor", "Bb minor", "B minor"]
 
-# SYSTEM 0 : BIG RIG // ANY SEQUENCER
-# SYSTEM 1 : MIDI DEVICES // CIRKLON OR NERDSEQ OR NO SEQUENCER
-# SYSTEM 2 : SOUND TOYS // NO SEQUENCER
-# SYSTEM 3 : STANDALONE // NO SEQUENCER
-# SYSTEM 4 : HIGH LEVEL // ANY SEQUENCER
+# SYSTEM 0 : BIG RIG (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
+# SYSTEM 1 : MIDI DEVICES (CIRKLON OR NERDSEQ OR NO SEQUENCER)
+# SYSTEM 2 : SOUND TOYS (NO SEQUENCER)
+# SYSTEM 3 : STANDALONE (NO SEQUENCER)
+# SYSTEM 4 : HIGH LEVEL (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
 system_list = [ 
 	["General CV", "Entity Bass Drum Synthesizer", "Plaits", "Zero Point Oscillator", "Chainsaw", "Squid Salmple", "Piston Honda", "SID Guts", "SID Guts Deluxe", "FMVDO", "Hertz Donut", "Akemie's Castle", "Tyme Sefari MK2", "Ataraxic Translatron", "Loquelic Iteritas", "Basimilus Iteritas Alter", "Pico Drums", "Gieskes No Drums", "Crater", "M303", "ER301", "Game Boy", "NES", "Sega Genesis", "Nord Micro Modular", "Plinky", "RE-303", "Juteon Shonen Bassboy+", "TR09"], 
 	["Game Boy", "NES", "Sega Genesis", "Nord Micro Modular", "RE-303", "Juteon Shonen Bassboy+", "TR09"], 

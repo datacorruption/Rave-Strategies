@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
-import random
 from email.message import EmailMessage
 import smtplib
+import random
 import songdata
 from songdata import *
 
@@ -27,11 +27,11 @@ genre = random.choice(genre_list)
 key = random.choice(key_list)
 
 # WEIGHTED PROBABILITY FOR SYSTEM SELECTION
-# SYSTEM 0 => 50% : BIG RIG (ANY SEQUENCER OR NO SEQUENCER)
+# SYSTEM 0 => 50% : BIG RIG (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
 # SYSTEM 1 => 10% : MIDI DEVICES (CIRKLON OR NERDSEQ OR NO SEQUENCER)
 # SYSTEM 2 => 15% : SOUND TOYS (NO SEQUENCER)
 # SYSTEM 3 => 15% : STANDALONE (NO SEQUENCER)
-# SYSTEM 4 => 10% : HIGH LEVEL (ANY SEQUENCER)
+# SYSTEM 4 => 10% : HIGH LEVEL (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
 system_weights = [0] * 50 + [1] * 10 + [2] * 15 + [3] * 15 + [4] * 10
 
 system_selection = random.choice(system_weights)
