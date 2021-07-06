@@ -2,7 +2,10 @@
 genre_list = ["techno", "house", "electro", "jungle", "drum & bass", "ambient", "new age", "vaporwave", "gabber", "trance", "drone", "industrial", "trap", "deconstructed club", "glitch", "avant garde", "hyperpop", "dub", "noise", "EBM", "classical", "chipmusic", "hardstyle", "footwork", "garage", "chillout", "minimal wave", "jazz"]
 
 # KEYS
-key_list = [ "C major", "Db major", "D major", "Eb major", "E major", "F major", "F# major", "Gb major", "G major", "Ab major", "A major", "Bb major", "B major", "C minor", "C# minor", "D minor", "Eb minor", "D# minor", "E minor", "F minor", "F# minor", "G minor", "G# minor", "A minor", "Bb minor", "B minor"]
+key_list = ["C major", "Db major", "D major", "Eb major", "E major", "F major", "F# major", "Gb major", "G major", "Ab major", "A major", "Bb major", "B major", "C minor", "C# minor", "D minor", "Eb minor", "D# minor", "E minor", "F minor", "F# minor", "G minor", "G# minor", "A minor", "Bb minor", "B minor"]
+
+# PITCHES (CORRESPONDING TO KEYS IN KEY_LIST)
+pitch_list = ["C D E F G A B", "Db Eb F Gb Ab Bb C", "D E F# G A B C#", "Eb F G Ab Bb C D", "E F# G# A B C# D#", "F G A Bb C D E", "F# G# A# B C# D# E#", "Gb Ab Bb Cb Db Eb F", "G A B C D E F#", "Ab Bb C Db Eb F G", "A B C# D E F# G#", "Bb C D Eb F G A", "B C# D# E F# G# A#", "C D Eb F G Ab Bb", "C# D# E F# G# A B", "D E F G A Bb C", "Eb F Gb Ab Bb Cb Db", "D# E# F# G# A# B C#", "E F# G A B C D", "F G Ab Bb C Db Eb", "F# G# A B C# D E", "G A Bb C D Eb F", "G# A# B C# D# E F#", "A B C D E F G", "Bb C Db Eb F Gb Ab", "B C# D# E F# G# A#"]
 
 # SYSTEM 0 : BIG RIG (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
 # SYSTEM 1 : MIDI DEVICES (CIRKLON OR NERDSEQ OR NO SEQUENCER)
