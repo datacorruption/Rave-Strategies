@@ -27,7 +27,6 @@ genre = random.choice(genre_list)
 i = random.choice(range(len(key_list)))
 key = key_list[i]
 pitches = pitch_list[i]
-# key = random.choice(key_list)
 
 # WEIGHTED PROBABILITY FOR SYSTEM SELECTION
 # SYSTEM 0 => 50% : BIG RIG (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
