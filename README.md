@@ -14,23 +14,21 @@ Rave Strategies is a tool for generating creative prompts to assist in the produ
 
 ## Sample Output
 
-```
-Write a 170bpm jungle track in F# minor using Paripi Destroyer / Korg NTS-1 / PO33 KO with a duration of ~2:00.
+>Write a 170bpm jungle track in F# minor using Paripi Destroyer / Korg NTS-1 / PO33 KO with a duration of ~3:00.
+>
+>It should glow like a figure from a half-remembered dream.
 
-It should glow like a figure from a half-remembered dream.
-```
+<br/>
 
-```
-Write a 90bpm gabber track in B major using General CV / ER301 / Crater sequenced by Teletype with a duration of ~4:00.
+>Write a 90bpm gabber track in B major using Zero Point Oscillator / ER301 / Crater sequenced by Teletype with a duration of ~2:00.
+>
+>It should taste like a stone on the ocean floor.
 
-It should taste like a stone on the ocean floor.
-```
+<br/>
 
-```
-Write a 200bpm vaporwave track in Bb major using General CV / Tyme Sefari MK2 / Zero Point Oscillator sequenced by Cirklon with a duration of ~5:00.
-
-It should transform like a love in the pit of your stomach.
-```
+>Write a 200bpm vaporwave track in Bb major using General CV / Tyme Sefari MK2 / Akemie's Castle sequenced by Cirklon with a duration of ~5:00.
+>
+>It should transform like a love in the pit of your stomach.
 
 ## Requirements
 - Python3
