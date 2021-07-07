@@ -2,7 +2,7 @@
 
 ## About
 
-Rave Strategies is a tool for generating creative prompts to assist in the production of rave tracks. It provides the following guidance each time it's run:
+Rave Strategies is a tool for generating creative prompts to assist in the production of rave tracks. It provides the following guidance each time it's run, delivered via email:
 
 - Tempo
 - Genre
