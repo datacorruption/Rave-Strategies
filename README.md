@@ -1,4 +1,4 @@
-# Rave Strategies
+<p align="center"><img src="https://user-images.githubusercontent.com/2317743/124702841-05e89c80-dea6-11eb-9e98-5d4c3342a140.png"></p>
 
 ## About
 
