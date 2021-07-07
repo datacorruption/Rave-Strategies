@@ -14,3 +14,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Other
+**/_ASSETS
+requirements.txt
