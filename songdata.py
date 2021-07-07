@@ -1,3 +1,6 @@
+# BPM MIN and MAX
+bpm_range = [80, 200]
+
 # GENRES
 genre_list = ["techno", "house", "electro", "jungle", "drum & bass", "ambient", "new age", "vaporwave", "gabber", "trance", "drone", "industrial", "trap", "deconstructed club", "glitch", "avant garde", "hyperpop", "dub", "noise", "EBM", "classical", "chipmusic", "hardstyle", "footwork", "garage", "chillout", "minimal wave", "jazz"]
 

@@ -10,10 +10,11 @@ load_dotenv(".env")
 SENDER = os.environ.get("GMAIL_USER")
 PASSWORD = os.environ.get("GMAIL_PASSWORD")
 RECIPIENT = os.environ.get("EMAIL_RECIPIENT")
+SUBJECT = os.environ.get("EMAIL_SUBJECT_LINE")
+EMAIL_ENABLED = (os.environ.get("EMAIL_ENABLED", 'False') == 'True')
 
 # GENERATE A TRACK TEMPO
-# BETWEEN 80 AND 200 BPM
-bpm = str(random.randint(8,20)*10)
+bpm = str(random.randint(bpm_range[0]/10,bpm_range[1]/10)*10)
 
 # WEIGHTED PROBABILITY FOR SONG LENGTH
 # 1:00 => 10%
@@ -34,7 +35,7 @@ pitches = pitch_list[i]
 # SYSTEM 2 => 15% : SOUND TOYS (NO SEQUENCER)
 # SYSTEM 3 => 15% : STANDALONE (NO SEQUENCER)
 # SYSTEM 4 => 10% : HIGH LEVEL (CIRKLON OR NERDSEQ OR TELETYPE OR NO SEQUENCER)
-system_weights = [0] * 50 + [1] * 10 + [2] * 15 + [3] * 15 + [4] * 10
+system_weights = [0] * len(system_list[0]) + [1] * len(system_list[1]) + [2] * len(system_list[2]) + [3] * len(system_list[3]) + [4] * len(system_list[4])
 
 system_selection = random.choice(system_weights)
 sounds = random.sample(system_list[system_selection], random.randint(1, 3))
@@ -73,4 +74,11 @@ def send_email(recipient, subject, body) :
     server.send_message(msg)
     server.quit()
 
-send_email(RECIPIENT, subject="Today\'s Rave Strategy", body=strategy)
+if EMAIL_ENABLED:
+    try:
+        send_email(RECIPIENT, subject=SUBJECT, body=strategy)
+        print("Message sent to", RECIPIENT)
+    except smtplib.SMTPAuthenticationError as e:
+        print("Authentication error. Update email credentials in .env.\n", e)
+else:
+    print(strategy);
