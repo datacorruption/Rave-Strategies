@@ -2,7 +2,7 @@
 
 ## About
 
-Rave Strategies is a tool for generating creative prompts to assist in the production of rave tracks. It provides the following guidance each time it's run, delivered via email:
+Rave Strategies is a tool for generating creative prompts to assist in the production of rave tracks. It provides the following guidance each time it's run, delivered via email or at the command line:
 
 - Tempo
 - Genre
@@ -32,20 +32,25 @@ Rave Strategies is a tool for generating creative prompts to assist in the produ
 
 ## Requirements
 - Python3
-- Network Connection
+- Network connection
 
 ## Dependencies
 - python-dotenv
 
 ## Setup
-- Install dependencies
-- Create .env file within root directory of project, formatted as follows:
+- Install dependencies: `python3 install -r requirements.txt`
+- Update .env file within root directory of project with your email credentials. Support is limited to Gmail with 2FA disabled and ["less secure apps"](https://support.google.com/accounts/answer/6010255) enabled. Alternatively, insert a `#` in front of `EMAIL_ENABLED=True` to print prompts directly at the command line instead of sending email:
 ```
+# Comment this line to print strategy at command line instead of in email
+EMAIL_ENABLED=True
+
+# Will only be used if EMAIL_ENABLED=True
 GMAIL_USER=your_email_address
 GMAIL_PASSWORD=your_password
 EMAIL_RECIPIENT=email_address_receiving_rave_strategies
+EMAIL_SUBJECT_LINE="Today's Rave Strategy"
 ```
-- Modify system_list and sequencer_list in songdata.py to reflect your own gear.
+- Modify `songdata.py` to reflect your own gear and parameters.
 
 ## Usage
 
@@ -54,7 +59,6 @@ $ python3 rave-strategies.py
 ```
 
 ## To Do
-- Add weighted probability to sequencer selection
 - Expand vocab for actions, things, contexts
 
 
