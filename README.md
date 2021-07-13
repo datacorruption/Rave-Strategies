@@ -39,7 +39,7 @@ Rave Strategies is a tool for generating creative prompts to assist in the produ
 
 ## Setup
 - Install dependencies: `python3 install -r requirements.txt`
-- Update .env file within root directory of project with your email credentials. Support is limited to Gmail with 2FA disabled and ["less secure apps"](https://support.google.com/accounts/answer/6010255) enabled. Alternatively, insert a `#` in front of `EMAIL_ENABLED=True` to print prompts directly at the command line instead of sending email:
+- Rename .env_example to .env (file found within root directory of project) and and update it with your email credentials and desired options. Support is limited to Gmail with 2FA disabled and ["less secure apps"](https://support.google.com/accounts/answer/6010255) enabled. Alternatively, insert a `#` in front of `EMAIL_ENABLED=True` to print prompts directly at the command line instead of sending email:
 ```
 # Comment this line to print strategy at command line instead of in email
 EMAIL_ENABLED=True
